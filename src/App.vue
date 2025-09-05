@@ -3,24 +3,16 @@ import HelloWorld from './components/HelloWorld.vue'
 import TheWelcome from './components/TheWelcome.vue'
 import NowPlaying from './components/NowPlaying.vue'
 import {ref} from "vue";
-import Controls from "@/components/NowPlayingComponents/Controls.vue";
-const weezerArtUrl = ref("http://cdn.rockbot.com/upload/live/albums/500/4/23944.jpg")
 </script>
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" :src="weezerArtUrl" width="125" height="125" />
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
   </header>
 
   <main>
     <NowPlaying style = "background-color: deeppink;
 " />
-    <Controls></Controls>
-    <TheWelcome />
   </main>
 </template>
 

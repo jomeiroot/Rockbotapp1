@@ -51,7 +51,7 @@ const panelId = `vol-panel-${Math.random().toString(36).slice(2, 9)}`;
   >
     <!-- trigger -->
     <button
-        class="np-volpop__btn"
+        class = "np-volpop__btn"
         type="button"
         :aria-expanded="isOpen"
         :aria-controls="panelId"
@@ -87,7 +87,7 @@ const panelId = `vol-panel-${Math.random().toString(36).slice(2, 9)}`;
   </div>
 </template>
 
-<style scoped>
+<style   scoped>
 .np-volpop {
   position: relative;
   display: inline-flex;
@@ -101,9 +101,10 @@ const panelId = `vol-panel-${Math.random().toString(36).slice(2, 9)}`;
   gap: 8px;
   padding: 6px 10px;
   border-radius: 999px;
-  border: 1px solid var(--border, rgba(255,255,255,0.07));
   background: rgba(255,255,255,0.06);
-  color: var(--text, #e6e9ef);
+  border: 1px solid var(--border);
+  color: var(--text);
+  font-size: 0.9rem;
   cursor: pointer;
   transition: background .2s ease, transform .12s ease, border-color .2s ease;
 }
