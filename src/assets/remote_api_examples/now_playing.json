@@ -1,0 +1,16 @@
+{
+  "song_id": 5897,
+  "song": "Island In The Sun",
+  "artist_id": 6,
+  "artist": "Weezer",
+  "album_id": 6,
+  "album": "Weezer",
+  "artwork_small": "http://cdn.rockbot.com/upload/live/albums/100/4/23944.jpg",
+  "artwork_large": "http://cdn.rockbot.com/upload/live/albums/500/4/23944.jpg",
+  "duration": 200,
+  "remaining": 200,
+  "votes_up": 0,
+  "votes_down": 100,
+  "volume": 5,
+  "platform": "web"
+}
