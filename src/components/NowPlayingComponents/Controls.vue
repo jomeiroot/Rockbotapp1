@@ -1,13 +1,17 @@
 <script setup lang="js">
 
 
+const emit = defineEmits(["skip", "previous", 'play_pause'])
+
 </script>
 
 <template>
+
+
   <div class="controls">
-    <button class="btn ghost" aria-label="Previous" title="Previous">⏮</button>
-    <button class="btn primary" aria-label="Play/Pause" title="Play/Pause">▶</button>
-    <button class="btn ghost" aria-label="Next" title="Next">⏭</button>
+    <button class="btn ghost" aria-label="Previous" title="Previous" @click="emit('previous')">⏮</button>
+    <button class="btn primary" aria-label="Play/Pause" title="Play/Pause" @click="emit('play_pause')">▶</button>
+    <button class="btn ghost" aria-label="Next" title="Next" @click="emit('skip')">⏭</button>
   </div>
 </template>
 

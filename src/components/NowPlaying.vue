@@ -96,6 +96,19 @@ onMounted(async () => {
   }
   Object.assign(track, data);
 });
+
+async function handle_skip(){
+  try {
+    // Example — check docs for actual skip endpoint
+    await Rockbot.skip();
+    // Then refresh track info
+    const { data } = await Rockbot.nowPlaying();
+    Object.assign(track, data);
+  } catch (e) {
+    console.error("Skip failed:", e);
+  }
+
+}
 </script>
 
 <template>
@@ -121,7 +134,7 @@ onMounted(async () => {
             :album_title="track.album"
             :artist_title="track.artist"></SongTitles>
         <!-- controls row (visual only — hook up later if you like) -->
-        <Controls class="controls"></Controls>
+        <Controls class="controls" @skip="handle_skip"></Controls>
         <!-- progress -->
         <progress-bar
             :duration="track.duration"
