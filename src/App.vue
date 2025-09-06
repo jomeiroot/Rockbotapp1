@@ -1,19 +1,9 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
-import NowPlaying from './components/NowPlaying.vue'
-import {ref} from "vue";
+// No need to import components here since we're using router
 </script>
 
 <template>
-  <header>
-
-  </header>
-
-  <main>
-    <NowPlaying style = "background-color: deeppink;
-" />
-  </main>
+  <router-view />
 </template>
 
 <style scoped>
